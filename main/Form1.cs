@@ -38,5 +38,15 @@ namespace Password_Generator
             configs.isSymbols = CB_symbols.Checked;
             return configs;
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CopyBTN_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetText(GeneraterText.Text);
+        }
     }
 }
